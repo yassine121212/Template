@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap');.det_product{
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(1cm);
+    .right{
+        background-color: green;
+         height:480px;
+        flex: 2.3;
+        margin-left: 2cm;
+    }
+    .left{
+        flex: 2;
+        margin-left: 1.5cm;
+        margin-right: 4.5cm;
+        .title{ 
+            margin-top: 0.5cm;
+       
+            .items{
+ 
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            
+            .item{
+                background-color: #f7f7f7;
+                padding: 5px;
+                 
+                font-size: small;
+            }
+        }}
+        .price{
+            margin-top: 0.5cm;
+
+            .items{
+            display: flex;
+            align-items: center;
+            gap: 1.5cm;
+            .pri{
+                display: flex;
+                align-items: center;
+                gap:0.5cm;
+                .lastpri{
+                    color: #919191;
+                    &>strike{
+                         color: #919191;
+                    }
+                }
+                .promo{
+                    background-color: #336667;
+                    width: 70px;
+                    height: 26px;
+                    border-radius: 15px;
+                    text-align: center;
+                    padding-top: 8px;
+                    
+                    &>span{
+                    color: white;
+                     font-size: 16px;
+                     margin-top: 5px;
+                    margin-left: 5px;
+                     }
+                }
+            }
+            }
+        }
+        .todo{
+            font-size: 15px;
+        }
+        .source {
+            margin-top: 0.6cm;
+
+            .items{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+             .item{
+                border: 1px solid #a8a8a8;
+                padding: 5px;
+                font-size: small;
+                &:hover{
+                    border: 1px solid #3ab39b;
+                    cursor: pointer;
+                }
+            }
+            }
+        }
+        .origine {
+            margin-top: 0.8cm;
+
+            .items{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 5px;
+             .item{
+                border: 1px solid #a8a8a8;
+                padding: 5px;
+                font-size: small;
+                &:hover{
+                    border: 1px solid #3ab39b;
+                    cursor: pointer;
+                }
+            }
+            }
+        }
+        .quantite {
+            margin-top: 0.8cm;
+
+            .items{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+             .item{
+                border: 1px solid #e4e4e4;
+                 height: 51px;
+                text-align: center;
+                
+                 
+            }
+            .toQua{
+                width: 111px;
+                border-radius: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .fontqua{
+                    font-size: 0.6cm;
+                     color: #c0c0c0af ;
+                 }
+                 .count{
+                    font-size: large;
+                    margin-bottom: 5px;
+                  }
+             }
+            .toAdd{
+                width: 217px;
+                background-color: #3ab39b;
+                border-radius: 30px;
+                align-items: center;
+                color: white;
+                font-size: larger;
+                position: relative;
+                span{
+                    position: absolute;
+                    margin-left: -65px;
+                    margin-top: 13px;
+                }
+            }
+            .toHeart{
+                width: 51px;
+                border-radius: 50%;
+                color: gray;
+                font-size: 0.5cm;
+                position: relative;
+
+                .heartt{
+                    position: absolute;
+                    margin-left: -9px;
+                     margin-top: 15px;
+                }
+            }
+            .toDow{
+                width: 329px;
+                border-radius: 30px;
+                position: relative;
+                border: 1px solid #3ab39b ;
+
+                .fadow{
+                    color: black;
+                    position: absolute;
+                    margin-left: -140px;
+                     margin-top: 15px;
+                     
+                  }
+                .textdow{
+                    margin-left: 20px;
+                    position: absolute;
+                    margin-left: -100px;
+                    margin-top: 15px;
+                }
+            }
+            }
+        }
+    }
+}
+.huile{
+    font-family:'Fraunces', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
