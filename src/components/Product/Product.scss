@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap');.det_product{
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap');
+.det_product{
     display: flex;
     justify-content: space-evenly;
     transform: translateY(1cm);
+     
     .right{
         background-color: green;
          height:480px;
