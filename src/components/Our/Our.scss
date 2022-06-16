@@ -1,0 +1,35 @@
+.our{
+    background-color: #f7f7f7;
+    .ourgo{
+    display: flex;
+    align-items: center;
+   
+    gap: 2cm;
+    margin-left: 2.5cm ;
+    margin-right: 2.5cm ;
+    
+      .ourele {
+         display: flex;
+         flex-direction: column;
+         align-items: center;  
+         text-align: center;  
+         margin-top: 1cm ;
+         margin-bottom: 1cm ;
+          .imagepla{
+         
+        width: 71px;
+        height: 71px;
+         background-color: white;
+        border-radius: 50%;
+             img{
+                padding-top: 15px;
+             }
+              }
+            }
+
+}
+}
+.detailour{
+    color: #336667;
+    font-size:15px ;
+}

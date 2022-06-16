@@ -8,6 +8,7 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { AiTwotoneHeart } from 'react-icons/ai';
 const Tabsimi=[
     {
+        "id":1,
         "title":"Shampoing naturel",
         "nature":"Huiles essenteilles",
         "sponsor":"Olivia health",
@@ -18,6 +19,7 @@ const Tabsimi=[
 
     },
     {
+        "id":2,
         "title":"Pack Huiles Essenteilles",
         "nature":"Huiles Essenteilles",
         "sponsor":"Olivia health",
@@ -28,6 +30,7 @@ const Tabsimi=[
 
     },
     {
+        "id":3,
         "title":"Pack Huiles Essenteilles",
         "nature":"Huiles Essenteilles",
         "sponsor":"Olivia health",
@@ -38,7 +41,8 @@ const Tabsimi=[
 
 
     },
-    {
+    {   
+        "id":4,
         "title":"Pack Huiles Essenteilles",
         "nature":"Huiles Essenteilles",
         "sponsor":"Olivia health",
@@ -54,8 +58,8 @@ const Tabsimi=[
     <div className='globalSimi'>
         <span className='headpro'>Produits Similaires</span>
         <div className="pro_simi">
-            {Tabsimi?.map(item=>
-               <div className="pro">
+            {Tabsimi?.map((item) =>
+               <div key={item.id} className="pro">
                   <div className="heart">
                   {item.favoris ?(
                   <AiTwotoneHeart className='toheart' />)
