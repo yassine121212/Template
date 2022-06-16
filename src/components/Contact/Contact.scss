@@ -1,0 +1,67 @@
+.contact{
+     display: flex;
+      justify-content: space-evenly;
+     gap: 2cm;
+     background-color: #3ab39b;
+     .space{
+        padding: 1cm;
+     }
+     .sentence{
+        flex: 2;
+        transform: translateY(-0.4cm);
+        margin-left: 4cm;
+        p{
+            font-size: 1cm;
+            color: white;
+        }
+     }
+      .send{
+        flex: 2;
+        transform: translateY(0.4cm);
+
+        .tosend{
+            display: flex;
+            gap: 0.5cm;
+            align-items: center;
+            .textsend .inputsai{
+                height: 1.3cm;
+                width: 395px;
+                border-radius: 1cm;
+                border: none;
+                font-size: large;
+                &::placeholder{
+                    padding-left: 15px;
+                 }
+            }
+            .iconsend{
+                background-color: #336667;
+                height: 51px;
+                width: 51px;
+                border-radius: 50%;
+                text-align: center;
+                
+                .icontosend{
+                    padding-top: 10px;
+                    font-size: 0.8cm;
+                    color: white !important;
+                }
+            }
+        }
+        .politique{
+            display: flex;
+            gap:10px;
+            margin-top: 0.3cm;
+            .textpoli{
+                transform: translateY(-0.3cm);
+                font-size: smaller;
+                color: white;
+                .linkpoli{
+                    a{
+                  color: #336667 !important;
+                     }
+                 }
+            }
+         }
+      }
+
+}

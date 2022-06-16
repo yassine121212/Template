@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.globalSimi{
+     align-items: center;
+     width: 100%;
+     .headpro{
+        font-size: 1cm;
+        font-weight: 600;
+        font-family:'Poppins', serif;
+        margin-left: 14cm;
+
+     }
+     .pro_simi{
+        display: flex;
+        gap: 1cm;
+         margin-bottom: 1cm;
+         margin-left: 2.5cm;
+         margin-right: 2cm;
+         margin-top: 1cm;
+
+          .pro{
+            margin-right: -25px;
+            border: 1px solid #e4e4e4;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3cm;
+            position: relative;
+              .image{
+                width: 281px;
+                height: 200px;
+                 object-fit:cover;
+              }
+              .title 
+              { transform: translateX(15px);
+               .nom_title{
+                color: #336667;
+                font-size: 0.6cm;
+              }
+              
+              }
+             
+              .sponsor{
+                transform: translateX(15px);
+
+               .nom_sponsor{
+                    color: #9b9999;
+                    font-size: 0.4cm;
+    
+                 }}
+               .categories {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                padding: 0.3cm;
+                 .plus{
+                    background-color: #f7f7f7;
+                    width: 20px;
+                    text-align: center;
+                 }
+                 .cat{
+ 
+                    background-color: #f7f7f7;
+                       .nom_catego{
+                         font-size: 11px;
+                         padding:5px 5px;
+                     }
+                 }
+               }
+            .heart{
+               background-color:#f39b93;
+               color: white;
+               width: 25px;
+               max-height: 25px;
+               border-radius: 50%;
+               text-align: center;
+               position: absolute;
+               top:5px;
+               right: 5px;
+               cursor: pointer;
+                    .toheart{
+                        font-size: medium;
+                        padding-top: 3px;
+                        padding-right: 0.5px;
+                        
+                        }
+               }
+              
+               
+        }
+     }
+}
