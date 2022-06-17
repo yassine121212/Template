@@ -25,7 +25,7 @@ const Images=[
 const Product = () => {
   const [selectedimg, setselectedimg] = useState(Images[0])
   const [countPro, setcountPro] = useState(12);
-   const { countpanier,setcountpanier } = useContext(Context);
+   const {setcountpanier } = useContext(Context);
 
   useEffect(() => {
       if(selectedimg==undefined){
