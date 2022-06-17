@@ -1,18 +1,58 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./Product.scss"
 import logoSrc from "../../images/logosrc.png"
 import { BsSuitHeart } from 'react-icons/bs';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { AiOutlineMinusCircle } from 'react-icons/ai';
 import { GrDownload } from 'react-icons/gr';
+import { GrFormNext } from 'react-icons/gr';
+import { GrFormPrevious } from 'react-icons/gr';
 
-
+import img1 from "../../images/mkinza.png";
+import img2 from "../../images/item1.png";
+import img3 from "../../images/item4.png";
+import img4 from "../../images/item3.png";
+import img5 from "../../images/item2.png";
+const Images=[
+    img1,
+    img2,
+    img3,
+    img4,
+    img5
+]
 
 const Product = () => {
+  const [selectedimg, setselectedimg] = useState(Images[0])
+  const [countPro, setcountPro] = useState(12);
+  useEffect(() => {
+      if(selectedimg==undefined){
+        setselectedimg(Images[4])
+      }
+     
+  }, [selectedimg]);
   return (
+
     <div>
       <div className="det_product">
-        <div className="right"></div>
+        <div className="right">
+          <div className="imgprin">
+            <img src={selectedimg} className="forimgprin" alt="" />
+            </div>
+            <div className="imagesslu">
+              <GrFormPrevious className="previous butthover" onClick={()=>setselectedimg(Images[Images.indexOf(selectedimg)-1])} />
+
+              {Images.map((img,index)=>(
+                <div className="otherimg">
+                <img src={img} style={{ "border":selectedimg === img ? "2px solid #3ab39b":"" }} className="forotherimg" alt="" key={index} onClick={()=>setselectedimg(img)} />
+                </div>
+              ))
+
+              }
+             
+              <GrFormNext className="next butthover" onClick={()=>setselectedimg(Images[Images.indexOf(selectedimg)+1])}/>
+             
+            </div>
+        </div>
         <div className="left">
             <div className="title">
             <div className="head">
@@ -68,11 +108,11 @@ const Product = () => {
             <div className="items">
                     <div className="item toQua">
                         <div>
-                       <AiOutlinePlusCircle className='fontqua'/></div>
+                       <AiOutlinePlusCircle onClick={()=>setcountPro(countPro+1)} className='fontqua'/></div>
                        <div className='count'>
-                         <span>12</span></div>
+                         <span className='num'>{countPro}</span></div>
                          <div>
-                         <AiOutlineMinusCircle className='fontqua'/></div>
+                         <AiOutlineMinusCircle onClick={()=>setcountPro(countPro-1)} className='fontqua'/></div>
                     </div>
                     <div className="item toAdd"><span>Ajouter au panier</span></div>
                     <div className="item toHeart"><BsSuitHeart className='heartt'/></div>

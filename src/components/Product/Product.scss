@@ -6,10 +6,52 @@
     transform: translateY(1cm);
      
     .right{
-        background-color: green;
-         height:480px;
-        flex: 2.3;
+        max-height:480px;
+        flex: 3;
         margin-left: 2cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(1cm);
+            .imgprin{
+                width:16cm;
+                .forimgprin{
+                   height:11cm;
+                   width:16cm;
+                   object-fit: cover;
+                     
+                }
+            }
+            .imagesslu{
+                display: flex;
+                gap: 25px;
+                width:100% ;
+                .otherimg{
+                    transform: translateX(0.7cm);
+                    padding-top: 0.5cm;
+                     .forotherimg{
+                        height: 1.7cm;
+                        width: 2.1cm;
+                    }
+                }
+                .previous{
+                    transform: translate(0.3cm,1.1cm);
+
+                }
+                .next{
+                    transform: translate(0.9cm,1.1cm);
+                }
+                .butthover{
+                   height: 20px;
+                   width: 20px;
+                   border-radius: 50%;
+                   cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(223, 223, 223);
+                }
+               }
+            }
     }
     .left{
         flex: 2;
@@ -135,6 +177,10 @@
                  .count{
                     font-size: large;
                     margin-bottom: 5px;
+                    .num{ 
+                      font-family:  'Montserrat', sans-serif;
+                      font-weight: bold;
+                    }
                   }
              }
             .toAdd{
@@ -160,8 +206,9 @@
 
                 .heartt{
                     position: absolute;
-                    margin-left: -9px;
-                     margin-top: 15px;
+                    margin-left: -10px;
+                    margin-top: 15px;
+                    cursor: pointer;
                 }
             }
             .toDow{

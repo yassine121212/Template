@@ -7,10 +7,12 @@ import Contact from "../components/Contact/Contact";
 import Our from "../components/Our/Our";
 import Presentation from "../components/Presentation/Presentation";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
 const Template = () => {
   return (
     <div>
+      <Header/>
       <Navbar/>
       <Product/>
       <Description/>

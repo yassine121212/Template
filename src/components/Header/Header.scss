@@ -1,0 +1,32 @@
+.header{
+    background-color: #f0a7a1;
+    height: 41px;
+    text-align: center;
+    overflow: hidden;
+     .head{
+        display: flex;
+        gap:4cm;
+        align-items: center;
+        transform: translate(12cm,-7px);
+        width: 100%;
+          .sentence{
+            font-size: 0.45cm;
+          }
+          .call{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+             .imghead{
+                height: 30px;
+                padding-top: 5px;
+              }
+              .number{
+                font-size: 0.4cm;
+                font-weight: 600;
+              }
+         }
+        }
+ }
+ .linkhead{
+color: black; }
