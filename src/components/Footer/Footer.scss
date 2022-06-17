@@ -12,8 +12,8 @@
 
   .footer{
     display: flex;
-     gap:1cm;
-     padding:2cm 0.5cm;
+     gap:1.5cm;
+     padding:2cm 1cm;
      .space{
          display: flex;
          flex-direction: column;
@@ -53,7 +53,7 @@
     .eleme{
         display: flex;
         gap: 2cm;
-        padding-top: 0.5cm;
+        padding-top: 0.2cm;
         
         .social{
             display: flex;
@@ -63,12 +63,14 @@
     .cartban{
         display: flex;
         gap: 15px;
-        padding-top: 0.5cm;
+        padding-top: 0.2cm;
 
     }
     &>img{
         position: absolute;
         right: 0;
+        padding-top: 0.1cm;
+
     }
 }
 }
