@@ -1,12 +1,15 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import "./Navbar.scss"
 import Logo from "../../images/logo.png"
 import { FaRegUser } from 'react-icons/fa';
 import { BsSuitHeart } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { Context } from "../../store/Context";
 
 
 const Navbar = () => {
+  const { countpanier } = useContext(Context);
+
   return (
     <div className='nav'>
         <div className="logo">
@@ -37,7 +40,7 @@ const Navbar = () => {
              </div>
              <div className="item twice">
              <div className="font_cent">  <AiOutlineShoppingCart/></div>
-                <span className='counter_cart'>2</span>
+                <span className='counter_cart'>{countpanier}</span>
              </div>
              
         </div>

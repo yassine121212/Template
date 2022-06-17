@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import "./Product.scss"
 import logoSrc from "../../images/logosrc.png"
 import { BsSuitHeart } from 'react-icons/bs';
@@ -7,6 +7,7 @@ import { AiOutlineMinusCircle } from 'react-icons/ai';
 import { GrDownload } from 'react-icons/gr';
 import { GrFormNext } from 'react-icons/gr';
 import { GrFormPrevious } from 'react-icons/gr';
+import { Context } from "../../store/Context";
 
 import img1 from "../../images/mkinza.png";
 import img2 from "../../images/item1.png";
@@ -24,6 +25,8 @@ const Images=[
 const Product = () => {
   const [selectedimg, setselectedimg] = useState(Images[0])
   const [countPro, setcountPro] = useState(12);
+   const { countpanier,setcountpanier } = useContext(Context);
+
   useEffect(() => {
       if(selectedimg==undefined){
         setselectedimg(Images[4])
@@ -114,7 +117,7 @@ const Product = () => {
                          <div>
                          <AiOutlineMinusCircle onClick={()=>setcountPro(countPro-1)} className='fontqua'/></div>
                     </div>
-                    <div className="item toAdd"><span>Ajouter au panier</span></div>
+                    <div className="item toAdd"  onClick={() => setcountpanier(countPro)}><span>Ajouter au panier</span></div>
                     <div className="item toHeart"><BsSuitHeart className='heartt'/></div>
                     <div className="item toDow">
                      <GrDownload className='fadow'/>

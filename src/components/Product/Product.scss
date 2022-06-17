@@ -57,6 +57,7 @@
         flex: 2;
         margin-left: 1.5cm;
         margin-right: 4.5cm;
+        height: 20cm;
         .title{ 
             margin-top: 0.5cm;
        
@@ -191,6 +192,7 @@
                 color: white;
                 font-size: larger;
                 position: relative;
+                cursor: pointer;
                 span{
                     position: absolute;
                     margin-left: -65px;
