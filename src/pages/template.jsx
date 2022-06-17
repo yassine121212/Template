@@ -5,6 +5,8 @@ import Description from "../components/Description/Description";
 import Similair from "../components/Similair/Similair";
 import Contact from "../components/Contact/Contact";
 import Our from "../components/Our/Our";
+import Presentation from "../components/Presentation/Presentation";
+import Footer from "../components/Footer/Footer";
 
 const Template = () => {
   return (
@@ -14,7 +16,9 @@ const Template = () => {
       <Description/>
       <Similair/>
       <Our/>
+      <Presentation/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
