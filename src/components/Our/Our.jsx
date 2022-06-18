@@ -33,8 +33,8 @@ const Our = () => {
     <div className='our'>
          <div className="ourgo">
          {
-            Tabour?.map(item=>
-                <div className='ourele'>
+            Tabour?.map((item)=>
+                <div className='ourele' key={item.title}>
                  <div className="imagepla">
                     <img src={item.image} alt="our"/>
                  </div>
