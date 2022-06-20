@@ -12,8 +12,7 @@ import Header from "../components/Header/Header";
 const Template = () => {
   return (
     <div>
-      <Header/>
-      <Navbar/>
+    
       <Product/>
       <Description/>
       <Similair/>
